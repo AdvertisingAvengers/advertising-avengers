@@ -25,15 +25,21 @@
       Advertising Avengers
     </p>
 
-    <form id="contact-form" autocomplete="off">
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/mzdbqyev"
+      method="POST"
+      autocomplete="off"
+   >
 
-      <input type="text" placeholder="Your Name *" required />
-      <input type="email" placeholder="Your Email *" required />
-      <input type="text" placeholder="City for Ad Display *" required />
-      <input type="text" placeholder="Company Name (Optional)" />
-      <input type="text" placeholder="Advertising Platform *" required />
 
-      <textarea placeholder="Ad Description *" required></textarea>
+      <input type="text" name="name" placeholder="Your Name *" required />
+      <input type="email" name="email" placeholder="Your Email *" required />
+      <input type="text" name="city" placeholder="City for Ad Display *" required />
+      <input type="text" name="company" placeholder="Company Name (Optional)" />
+      <input type="text" name="platform" placeholder="Advertising Platform *" required />
+
+      <textarea name="message" placeholder="Ad Description *" required></textarea>
 
       <button type="submit" class="btn gold-hover">
         Submit Inquiry
@@ -78,3 +84,4 @@ btn.addEventListener('click', () => {
 <script src="script.js"></script>
 </body>
 </html>
+
