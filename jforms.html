@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Details Inquiry | Advertising Avengers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <span class="logo-top">Advertising</span>
+    <span class="logo-bottom">Avengers</span>
+  </div>
+  <a href="index.html" class="nav-btn gold-hover">Home</a>
+</nav>
+
+<section class="hero">
+
+  <div class="hero-box reveal">
+
+    <h1>Details Inquiry</h1>
+
+    <p class="company-name">
+      Advertising Avengers
+    </p>
+
+    <form id="contact-form" autocomplete="off">
+
+      <input type="text" placeholder="Your Name *" required />
+      <input type="email" placeholder="Your Email *" required />
+      <input type="text" placeholder="City for Ad Display *" required />
+      <input type="text" placeholder="Company Name (Optional)" />
+      <input type="text" placeholder="Advertising Platform *" required />
+
+      <textarea placeholder="Ad Description *" required></textarea>
+
+      <button type="submit" class="btn gold-hover">
+        Submit Inquiry
+      </button>
+
+    </form>
+
+    <!-- SUCCESS MESSAGE -->
+    <div id="thank-you-message">
+      <h3>Inquiry Submitted Successfully</h3>
+      <p>
+        Thank you for reaching out.  
+        Our team will carefully review your request and contact you shortly.
+      </p>
+      <button id="refill-btn" class="btn gold-hover">
+        Fill Another Inquiry
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+const form = document.getElementById('contact-form');
+const msg = document.getElementById('thank-you-message');
+const btn = document.getElementById('refill-btn');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  form.style.display = 'none';
+  msg.style.display = 'block';
+});
+
+btn.addEventListener('click', () => {
+  form.reset();
+  msg.style.display = 'none';
+  form.style.display = 'block';
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
