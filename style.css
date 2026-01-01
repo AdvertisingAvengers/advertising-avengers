@@ -210,6 +210,19 @@ body {
   box-shadow: 0 0 18px rgba(243,156,18,0.7);
 }
 
+/* SERVICE OPEN BUTTON */
+.service-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 26px;
+  background: #f39c12;
+  color: #2c3e50;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* FOOTER */
 footer {
   background: #34495e;
@@ -261,3 +274,4 @@ form textarea {
   opacity: 1;
   transform: translateY(0);
 }
+
