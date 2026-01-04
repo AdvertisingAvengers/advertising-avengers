@@ -30,6 +30,15 @@ body {
   z-index: 1000;
 }
 
+.nav-quote {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+  text-align: center;
+  flex: 1;
+}
+
 /* LOGO – TYPOGRAPHY UPDATED ONLY */
 .logo {
   display: flex;
@@ -274,4 +283,6 @@ form textarea {
   opacity: 1;
   transform: translateY(0);
 }
+
+
 
