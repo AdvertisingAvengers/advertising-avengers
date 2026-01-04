@@ -38,4 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+window.addEventListener("load", () => {
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+  const devFields = document.getElementById("dev-fields");
+
+  if (!devFields) return;
+
+  if (service === "web" || service === "app") {
+    devFields.style.display = "block";
+  }
+});
+
 
