@@ -93,23 +93,27 @@ body {
 }
 
 .hero-box {
-  background: rgba(52, 73, 94, 0.85);
-  padding: 50px;
-  max-width: 650px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  background: rgba(52, 73, 94, 0.9);
+  padding: 46px 48px;
+  max-width: 620px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
   z-index: 2;
 }
 
+
 /* HERO TEXT */
 .hero-box h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 15px;
   color: #f39c12;
 }
 
 .hero-box p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  opacity: 0.9;
   margin-bottom: 25px;
   color: #dcdde1;
   line-height: 1.4;
@@ -118,10 +122,12 @@ body {
 /* BUTTON */
 .btn {
   display: inline-block;
-  padding: 14px 36px;
+  padding: 14px 40px;
   background: #f39c12;
   color: #2c3e50;
-  border-radius: 30px;
+  border-radius: 28px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -136,8 +142,9 @@ body {
 }
 
 .social-icon img {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
+  opacity: 0.85;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -338,5 +345,3 @@ form textarea {
     font-size: 1.9rem;
   }
 }
-
-
